@@ -1,0 +1,71 @@
+#!/usr/bin/env mkb
+files # RenderEngine
+{
+	[RenderEngine]
+	(RenderEngine)
+    Main.cpp
+
+    # Boundary Classes
+    Game.cpp
+
+    # Control Classes
+    SceneManager.cpp
+    Scene.cpp
+    WorldGrid.cpp
+
+    # Entity Classes
+    SimpleTile.cpp
+    ParentTile.cpp
+    SimpleImage.cpp
+    AnimatedImage.cpp
+
+    # Associated Headers
+    Game.h
+    SceneManager.h
+    Scene.h
+    WorldGrid.h
+    SimpleTile.h
+    ParentTile.h
+    SimpleImage.h
+    AnimatedImage.h
+
+    # Interfaces
+    DrawableInterface.h
+    RenderableInterface.h
+    TileInterface.h
+}
+
+files # ControllerEngine
+{
+    [ControllerClasses]
+    (ControllerClasses)
+    
+    # Entity Classes
+    ControllerInterface.h
+    PhysicalControllerInterface.h
+
+    OnScreenController.cpp
+    MobileController.cpp
+    HidController.cpp
+    GestureController.cpp    
+
+    # Interfaces
+    OnScreenController.h
+    MobileController.h
+    HidController.h
+    GestureController.h   
+}
+
+subprojects
+{
+    iwutil
+    iw2dscenegraphcore
+    iw2dscenegraph
+    iwgx
+    iwresmanager
+    iwtween
+}
+
+deployment
+{
+}
