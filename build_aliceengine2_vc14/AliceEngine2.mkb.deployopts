@@ -1,0 +1,5 @@
+build ""
+outdir "c:/Users/conor/Documents/WorldGrid/Github/build_aliceengine2_vc14"
+!config !name "Default"
+!config <os>
+configlist "Default",

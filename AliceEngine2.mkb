@@ -3,10 +3,6 @@ files # RenderEngine
 {
 	[RenderEngine]
 	(RenderEngine)
-    Main.cpp
-
-    # Boundary Classes
-    Game.cpp
 
     # Control Classes
     SceneManager.cpp
@@ -20,7 +16,6 @@ files # RenderEngine
     AnimatedImage.cpp
 
     # Associated Headers
-    Game.h
     SceneManager.h
     Scene.h
     WorldGrid.h
@@ -40,20 +35,57 @@ files # ControllerEngine
     [ControllerClasses]
     (ControllerClasses)
     
-    # Entity Classes
-    ControllerInterface.h
-    PhysicalControllerInterface.h
-
+    # Manager Classes
     OnScreenController.cpp
     MobileController.cpp
     HidController.cpp
-    GestureController.cpp    
+    GestureController.cpp
+    ControllerManager.cpp
+    InputManager.cpp
 
-    # Interfaces
+    # Entity Classes
+    CInput.cpp
+
+    # Headers
     OnScreenController.h
     MobileController.h
     HidController.h
-    GestureController.h   
+    GestureController.h
+    ControllerManager.h
+    InputManager.h
+    CInput.h
+
+    # Interfaces
+    ControllerInterface.h
+    PhysicalControllerInterface.h
+    NonPhysicalControllerInterface.h 
+}
+
+files # GameEngineCore
+{
+    [GameEngineCore]
+    (GameEngineCore)
+    Main.cpp
+
+    # Boundary Classes
+    Game.cpp
+    
+    # Associated Headers
+    Game.h
+}
+
+files # CommonClasses
+{
+    [CommonClasses]
+    (CommonClasses)
+
+    # Entity Classes
+
+    # Associated Headers
+    GenericFactory.h
+
+    # Interfaces
+    ManagerInterface.h
 }
 
 subprojects
