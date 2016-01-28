@@ -1,9 +1,9 @@
 #ifndef GESTURECONTROLLER_H
 #define GESTURECONTROLLER_H
 
-#include "ControllerInterface.h"
+#include "NonPhysicalControllerInterface.h"
 
-class GestureController : public ControllerInterface
+class GestureController : public NonPhysicalControllerInterface
 {
 protected:
 public:

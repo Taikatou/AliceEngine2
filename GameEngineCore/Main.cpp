@@ -27,7 +27,7 @@ int main()
         // Sleep for 0ms to allow the OS to process events etc.
         s3eDeviceYield(0);
     }
-
+	delete game;
     //Terminate modules being used
     Iw2DTerminate();
     

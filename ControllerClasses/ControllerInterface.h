@@ -1,7 +1,9 @@
 #ifndef CONTROLLERINTERFACE_H
 #define CONTROLLERINTERFACE_H
 
-class ControllerInterface
+#include "../CommonClasses/ManagerInterface.h"
+
+class ControllerInterface: public ManagerInterface
 {
 protected:
 	int input;

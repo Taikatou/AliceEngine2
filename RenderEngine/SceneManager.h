@@ -1,13 +1,14 @@
 #ifndef SCENEMANAGER_H
 #define SCENEMANAGER_H
 
+#include "../CommonClasses/ManagerInterface.h"
 #include "Scene.h"
 #include "DrawableInterface.h"
 #include <vector>
 
 using namespace std;
 
-class SceneManager : public Scene
+class SceneManager : public ManagerInterface, public Scene
 {
 protected:
 	std::vector<DrawableInterface*> ChildrenOnScreen;

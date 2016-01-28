@@ -1,9 +1,9 @@
 #ifndef HIDCONTROLLER_H
 #define HIDCONTROLLER_H
 
-#include "ControllerInterface.h"
+#include "PhysicalControllerInterface.h"
 
-class HidController : public ControllerInterface
+class HidController : public PhysicalControllerInterface
 {
 protected:
 public:

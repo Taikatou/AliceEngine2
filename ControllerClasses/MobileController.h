@@ -1,9 +1,9 @@
 #ifndef MOBILECONTROLLER_H
 #define MOBILECONTROLLER_H
 
-#include "ControllerInterface.h"
+#include "PhysicalControllerInterface.h"
 
-class MobileController : public ControllerInterface
+class MobileController : public PhysicalControllerInterface
 {
 protected:
 public:

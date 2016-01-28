@@ -1,10 +1,11 @@
 #ifndef ONSCREENCONTROLLER_H
 #define ONSCREENCONTROLLER_H
 
-#include "ControllerInterface.h"
+#include "NonPhysicalControllerInterface.h"
 #include "../RenderEngine/DrawableInterface.h"
 
-class OnScreenController : public ControllerInterface, public DrawableInterface
+class OnScreenController : public NonPhysicalControllerInterface, 
+						   public DrawableInterface
 {
 protected:
 	DrawableInterface* ControllerScene;
